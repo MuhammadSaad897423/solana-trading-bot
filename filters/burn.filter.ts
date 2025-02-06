@@ -22,3 +22,4 @@ export class BurnFilter implements Filter {
     return { ok: false, message: 'Failed to check if LP is burned' };
   }
 }
+const burned = amount.value.fix.uiAmount === 0;
